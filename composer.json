@@ -48,7 +48,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Joomla\\Application\\Tests\\": "tests/"
+            "Joomla\\Tests\\Application\\": "tests/"
         }
     },
     "minimum-stability": "dev",
