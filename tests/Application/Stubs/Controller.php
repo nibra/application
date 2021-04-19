@@ -4,7 +4,7 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Joomla\Application\Tests\Stubs;
+namespace Joomla\Tests\Application\Stubs;
 
 use Joomla\Controller\AbstractController;
 

@@ -4,12 +4,12 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Joomla\Application\Tests\Controller;
+namespace Joomla\Tests\Application\Controller;
 
 use Joomla\Application\Controller\ControllerResolver;
 use Joomla\Application\Event\ApplicationEvent;
-use Joomla\Application\Tests\Stubs\Controller;
-use Joomla\Application\Tests\Stubs\HasArgumentsController;
+use Joomla\Tests\Application\Stubs\Controller;
+use Joomla\Tests\Application\Stubs\HasArgumentsController;
 use Joomla\Registry\Registry;
 use Joomla\Router\ResolvedRoute;
 use PHPUnit\Framework\TestCase;
@@ -53,7 +53,7 @@ class ControllerResolverTest extends TestCase
 	public function testResolvingACallableArrayFailsOnAClassWithRequiredArguments()
 	{
 		$this->expectException(\InvalidArgumentException::class);
-		$this->expectExceptionMessage('Controller `Joomla\Application\Tests\Stubs\HasArgumentsController` has required constructor arguments, cannot instantiate the class');
+		$this->expectExceptionMessage('Controller `Joomla\Tests\Application\Stubs\HasArgumentsController` has required constructor arguments, cannot instantiate the class');
 
 		(new ControllerResolver)->resolve(new ResolvedRoute([HasArgumentsController::class, 'execute'], [], '/'));
 	}
@@ -104,7 +104,7 @@ class ControllerResolverTest extends TestCase
 	public function testResolvingControllerInterfaceFailsOnAClassWithRequiredArguments()
 	{
 		$this->expectException(\InvalidArgumentException::class);
-		$this->expectExceptionMessage('Controller `Joomla\Application\Tests\Stubs\HasArgumentsController` has required constructor arguments, cannot instantiate the class');
+		$this->expectExceptionMessage('Controller `Joomla\Tests\Application\Stubs\HasArgumentsController` has required constructor arguments, cannot instantiate the class');
 
 		(new ControllerResolver)->resolve(new ResolvedRoute(HasArgumentsController::class, [], '/'));
 	}

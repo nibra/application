@@ -4,9 +4,9 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Joomla\Application\Tests\Web;
+namespace Joomla\Tests\Application\Web;
 
-use Joomla\Application\Tests\CompatTestCase;
+use Joomla\Tests\Application\CompatTestCase;
 use Joomla\Application\Web\WebClient;
 use PHPUnit\Framework\TestCase;
 
