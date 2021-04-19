@@ -43,12 +43,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Joomla\\Application\\": "src/"
+            "Joomla\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Joomla\\Application\\Tests\\": "Tests/"
+            "Joomla\\Application\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
